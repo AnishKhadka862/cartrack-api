@@ -14,27 +14,27 @@ mydb = myclient["cartrack"]
 ## Collections: cars, accidents
 ## cars
 ##      {
-##        VIN: "123ABC", Modelname: "Honda Pilot", Modelyear: "2015",
-##        Location: {City: Columbia, State: Missouri},
-##        previousownerscount: 5, accidents:
+##        VIN: "123ABC", Modelname: "Tesla Model S", Modelyear: "2020",
+##        Location: {City: Palo Alto, State: California},
+##        previousownerscount: 3, accidents:
 ##        [
 ##           {
-##             AID: 1, Carsinvolved: ["123ABC", "321CBA"], Date: 25/11/2020,
-##             Location: {City: Jefferson City, State: Missouri},
-##             Description: "Two cars collidied on the highway, minor injuries and damages"
+##             AID: 1, Carsinvolved: ["123ABC", "321CBA"], Date: 12/05/2021,
+##             Location: {City: San Francisco, State: California},
+##             Description: "Minor fender bender near Golden Gate Bridge"
 ##           },
 ##           {
-##             AID: 2, Carsinvolved: ["123ABC"], Date: 02/12/2020,
-##             Location: {City: Mexico, State: Missouri},
-##             Description: "Slid over the over because of bad weather"
+##             AID: 2, Carsinvolved: ["123ABC"], Date: 08/15/2022,
+##             Location: {City: Oakland, State: California},
+##             Description: "Hit a pole in bad weather, no major injuries"
 ##           }
 ##        ]
 ##      }
 ## Accidents (AccidentID, Carsinvolved, Time, Location, Description)
 ## {
-##     AID: 1, Carsinvolved: ["123ABC", "321CBA"], Date: 25/11/2020,
-##     Location: {City: Jefferson City, State: Missouri},
-##     Description: "Two cars collidied on the highway, minor injuries and damages"
+##     AID: 1, Carsinvolved: ["123ABC", "321CBA"], Date: 12/05/2021,
+##     Location: {City: San Francisco, State: California},
+##     Description: "Minor fender bender near Golden Gate Bridge"
 ##  }
 
 
@@ -76,7 +76,6 @@ def get_urls(temp_url, count, startIndex, total_count):
 def verify_vin(vin):
     '''checks if the given VIN is valid'''
     try:
-        #serial_num = int(vin[11:])
         return len(vin) == 6
     except:
         return False
