@@ -33,7 +33,10 @@ Copy code
   "VIN": "123ABC",
   "Modelname": "Tesla Model S",
   "Modelyear": "2020",
-  "Location": {"City": "Palo Alto", "State": "California"},
+  "Location": {
+    "City": "Palo Alto",
+    "State": "California"
+  },
   "previousownerscount": 3,
   "accidents": []
 }
