@@ -1,23 +1,23 @@
-##Car Tracking REST API
-###This is a REST API built with Flask for tracking cars and their accident histories. The API allows you to add, retrieve, and delete car records, including details about the cars, their locations, and any accidents they have been involved in.
+## Car Tracking REST API
+### This is a REST API built with Flask for tracking cars and their accident histories. The API allows you to add, retrieve, and delete car records, including details about the cars, their locations, and any accidents they have been involved in.
 
-##Features
-###Cars Collection: Stores details about cars, including VIN, model, year, location, number of previous owners, and accident history.
-###Accidents Collection: Stores accident details, including accident ID (AID), cars involved, date, location, and description.
-###Pagination: Supports pagination of car records.
+## Features
+### Cars Collection: Stores details about cars, including VIN, model, year, location, number of previous owners, and accident history.
+### Accidents Collection: Stores accident details, including accident ID (AID), cars involved, date, location, and description.
+### Pagination: Supports pagination of car records.
 
-##CRUD Operations:
-###Retrieve all car records or a specific car by VIN.
-###Add new car records.
-###Delete a car record by VIN.
+## CRUD Operations:
+### Retrieve all car records or a specific car by VIN.
+### Add new car records.
+### Delete a car record by VIN.
 
-##Technologies Used
-###Flask: For building the API.
-###MongoDB: For storing car and accident data.
-###Flask-RESTful: For building the RESTful routes.
-###webargs: For handling query parameters for pagination.
+## Technologies Used
+### Flask: For building the API.
+### MongoDB: For storing car and accident data.
+### Flask-RESTful: For building the RESTful routes.
+### webargs: For handling query parameters for pagination.
 
-##API Endpoints
+## API Endpoints
 1. Get All Cars
 GET /api/cars?count={}&startIndex={}
 Retrieves all car records, with pagination options for count (number of results) and startIndex (starting page).
@@ -30,7 +30,7 @@ Example: GET /api/car/123ABC
 POST /api/cars
 Adds a new car record to the database.
 
-##Example request body:
+## Example request body:
 json
 Copy code
 {
@@ -49,7 +49,7 @@ DELETE /api/car/<vin>
 Deletes a car record from the database by its VIN.
 Example: DELETE /api/car/123ABC
 
-##Setup and Running the API
+## Setup and Running the API
 1. Clone the Repository
 bash
 Copy code
